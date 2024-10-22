@@ -37,7 +37,6 @@ nav ul li a:hover {
 article {
     width: 95%; /* Make article full width */
     margin: 0 auto;
-    text-align: justify; /* Center align text in article */
 }
 
 article ul {
