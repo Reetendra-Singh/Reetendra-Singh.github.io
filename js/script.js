@@ -10,7 +10,7 @@ function toggleMenu() {
     } else {
         sidebar.style.left = '0px';
         overlay.style.display = 'block';
-        mainContent.style.marginLeft = '250px'; // Adjust main content when menu is open
+        mainContent.style.marginLeft = '0px'; // Adjust main content when menu is open
     }
 }
 
