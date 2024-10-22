@@ -18,7 +18,7 @@ nav ul li a:hover {
     transform: translateX(10px); /* Slide effect */
 }
 nav ul {
-    justify-content: center;
+    text-align: center;
 }
 
 background: linear-gradient(135deg, #f5f5dc 30%, #ff6347 100%);
