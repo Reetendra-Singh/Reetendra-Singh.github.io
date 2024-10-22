@@ -1,59 +1,14 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+/* Import Roboto Slab from Google Fonts */
 
-/* Body styles */
+/* Add your CSS styles here */
 body {
     font-family: 'Roboto Slab', serif; /* Set font to Roboto Slab */
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
     text-align: center; /* Center align all text */
     background-color: #e0f7fa; /* Light cyan background for a calming effect */
 }
-
-/* Menu-button styles */
-.menu-button {
-    position: absolute;
-    left: 15px;
-    top: 15px;
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Sidebar styles */
-.sidebar {
-    position: fixed;
-    left: -250px; /* Hidden off-screen */
-    top: 0;
-    height: 100%;
-    width: 250px;
-    background-color: #004d40; /* Dark teal for sidebar */
-    color: white;
-    transition: left 0.3s ease;
-    padding-top: 60px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-    z-index: 1000; /* Ensure it's above other content */
-}
-
-.sidebar a {
-    padding: 15px;
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-
-.sidebar a:hover {
-    background-color: #005d50;
-}
-
-main { 
-     transition: margin-left 0.3s ease;
-    }
-
-/* Header styles */
 header {
     background-color: #004d40; /* Dark teal for header background */
     padding: 20px 0; /* Add padding to the header */
@@ -63,11 +18,46 @@ header {
 }
 
 h1, h2 {
-    margin: 0;
+    margin: 0; /* Remove margin for headings */
     color: white; /* White text color */
 }
+.menu-button {
+    position: absolute; /* Position menu button absolutely */
+    left: 15px; /* Position from left */
+    top: 15px; /* Position from top */
+    background-color: #fff; /* White background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Round the button corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
 
-/* Footer styles */
+.sidebar {
+    position: fixed; /* Fix sidebar position */
+    left: -250px; /* Hidden off-screen */
+    top: 0; /* Align to the top */
+    height: 100%; /* Full height */
+    width: 250px; /* Set width */
+    background-color: #004d40; /* Dark teal background */
+    color: white; /* White text color */
+    transition: left 0.3s ease; /* Transition effect for opening */
+    padding-top: 60px; /* Space for top padding */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Add shadow to sidebar */
+    z-index: 1000; /* Ensure it's above other content */
+}
+.sidebar a {
+    padding: 15px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set link color to white */
+    display: block; /* Make link a block element */
+}
+.sidebar a:hover {
+    background-color: #005d50; /* Background color on hover */
+}
+main {
+    transition: margin-left 0.3s ease; /* Smooth transition for margin */
+}
 footer {
     background-color: #004d40; /* Dark teal for footer background */
     color: white; /* White text color */
@@ -90,16 +80,5 @@ footer a {
 
 footer a:hover {
     text-decoration: underline; /* Add underline on hover */
-}
-
-@media only screen and (max-width: 768px) {
-    header {
-        padding-top: 40px; /* Ensure space for the menu button */
-    }
-
-    /* Align the header content and adjust the layout */
-    h1 {
-        margin-top: 10px; /* Additional space between menu and title */
-    }
 }
 
