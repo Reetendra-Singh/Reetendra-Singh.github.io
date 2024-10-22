@@ -88,13 +88,3 @@ img.responsive {
     transform: translateY(0.3cm); /* Move the image 0.5 cm downward */
 }
 
-@media only screen and (max-width: 768px) {
-    header {
-        padding-top: 40px; /* Ensure space for the menu button */
-    }
-
-    /* Align the header content and adjust the layout */
-    h1 {
-        margin-top: 10px; /* Additional space between menu and title */
-    }
-}
