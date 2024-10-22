@@ -64,6 +64,23 @@ article p {
     color: black;
     text-align: justify;
 } 
+/* Typing animation */
+.typing {
+    display: inline-block; /* Inline-block for typing effect */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow */
+    border-right: 3px solid; /* Cursor effect */
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite; /* Animation for typing */
+}
+/* Typing animation keyframes */
+@keyframes typing {
+    from { width: 0; } /* Start with no width */
+    to { width: 100%; } /* Expand to full width */
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; } /* Hide caret */
+    50% { border-color: orange; } /* Show caret */
+}
 
 
 /* Image responsiveness */
