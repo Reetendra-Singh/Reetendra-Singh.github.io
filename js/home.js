@@ -7,7 +7,7 @@ function type() {
     if (index < typingText.length) { // Check if there are more characters to type
         typingElement.textContent += typingText.charAt(index); // Add next character
         index++; // Increment index
-        setTimeout(type, 100); // Call type function again after delay
+        setTimeout(type, 20); // Call type function again after delay
     }
 }
 
