@@ -1,25 +1,24 @@
+// Function to toggle the sidebar menu
 function toggleMenu() {
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('overlay');
-    const mainContent = document.getElementById('main-content');
+    const sidebar = document.getElementById('sidebar'); // Get the sidebar element
+    const overlay = document.getElementById('overlay'); // Get the overlay element
+    const isOpen = sidebar.style.left === '0px'; // Check if sidebar is open
 
-    if (sidebar.style.left === '0px') {
-        sidebar.style.left = '-250px';
-        overlay.style.display = 'none';
-        mainContent.style.marginLeft = '0'; // Reset margin on close
+    if (isOpen) {
+        sidebar.style.left = '-250px'; // Close the sidebar
+        overlay.style.display = 'none'; // Hide the overlay
     } else {
-        sidebar.style.left = '0px';
-        overlay.style.display = 'block';
-        mainContent.style.marginLeft = '0px'; // Adjust main content when menu is open
+        sidebar.style.left = '0px'; // Open the sidebar
+        overlay.style.display = 'block'; // Show the overlay
     }
 }
 
+// Function to close the sidebar menu when overlay is clicked
 function closeMenu() {
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('overlay');
-    const mainContent = document.getElementById('main-content');
-
-    sidebar.style.left = '-250px';
-    overlay.style.display = 'none';
-    mainContent.style.marginLeft = '0'; // Reset margin when closing
+    const sidebar = document.getElementById('sidebar'); // Get the sidebar element
+    const overlay = document.getElementById('overlay'); // Get the overlay element
+    sidebar.style.left = '-250px'; // Close the sidebar
+    overlay.style.display = 'none'; // Hide the overlay
 }
+// Start typing effect when the page loads
+document.addEventListener('DOMContentLoaded', type); // Add event listener for page load
