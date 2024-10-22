@@ -17,6 +17,10 @@ nav ul li a:hover {
     color: #fff;
     transform: translateX(10px); /* Slide effect */
 }
+nav ul {
+    justify-content: center;
+}
+
 background: linear-gradient(135deg, #f5f5dc 30%, #ff6347 100%);
 .menu-button {
     background-color: #ff6347; /* Tomato red */
