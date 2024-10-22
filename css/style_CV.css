@@ -21,12 +21,19 @@ nav ul {
     text-align: center;
 }
 
-background: linear-gradient(135deg, #f5f5dc 30%, #ff6347 100%);
-.menu-button {
-    background-color: #ff6347; /* Tomato red */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow */
-    transition: transform 0.3s ease-in-out; /* Add animation */
+nav.secondary-nav ul li a {
+    font-size: 16px; /* Adjust font size */
+    color: #004d40; /* Dark teal for link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    border: 2px solid #004d40; /* Add border around link */
+    padding: 5px 10px; /* Add padding */
+    border-radius: 5px; /* Add rounded corners */
+    transition: all 0.3s ease; /* Add transition for hover effect */
 }
-.menu-button:hover {
-    transform: scale(1.05); /* Slight scale on hover */
+
+nav.secondary-nav ul li a:hover {
+    background-color: #004d40; /* Dark teal background on hover */
+    color: white; /* White text color on hover */
 }
+
