@@ -1,4 +1,3 @@
-// Function to toggle the sidebar menu
 function toggleMenu() {
     const sidebar = document.getElementById('sidebar'); // Get the sidebar element
     const overlay = document.getElementById('overlay'); // Get the overlay element
