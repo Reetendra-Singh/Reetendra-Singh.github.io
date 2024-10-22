@@ -81,4 +81,13 @@ footer a {
 footer a:hover {
     text-decoration: underline; /* Add underline on hover */
 }
-
+/* Overlay */
+.overlay {
+    position: fixed; /* Fixed position for the overlay */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    display: none; /* Hidden by default */
+}
