@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="../css/style_research.css">
 </head>
 <body>
-    <header>
-        <h1>REETENDRA SINGH</h1>
-        <h2>Postdoctoral Fellow, Technion - Israel Institute of Technology</h2>
-        <div class="sidebar" id="sidebar">
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <div class="sidebar" id="sidebar">
         <a href="/">HOME</a>
         <a href="/research/">RESEARCH</a>
         <a href="/cvreetendra/">CV</a>
@@ -19,7 +18,13 @@
         <a href="/contact/">CONTACT</a>
         <a href="/more/">MORE</a>
     </div>
-    </header>
+
+    <main id="main-content">
+        <header>
+            <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+            <h1>REETENDRA SINGH</h1>
+            <h2>Postdoctoral Fellow, Technion - Israel Institute of Technology</h2>
+        </header>
        
     <section>
     <article>
