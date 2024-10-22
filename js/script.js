@@ -20,5 +20,3 @@ function closeMenu() {
     sidebar.style.left = '-250px'; // Close the sidebar
     overlay.style.display = 'none'; // Hide the overlay
 }
-// Start typing effect when the page loads
-document.addEventListener('DOMContentLoaded', type); // Add event listener for page load
