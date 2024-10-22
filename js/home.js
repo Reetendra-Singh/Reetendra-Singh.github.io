@@ -44,6 +44,5 @@ if (window.location.pathname.endsWith(".html")) {
             }
 
             typeWriterEffect();
-        });
-
+        }
 
