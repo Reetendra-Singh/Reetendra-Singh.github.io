@@ -38,7 +38,7 @@ nav ul {
     padding: 0;
     margin: 20px 0 0 0; /* Remove margin at the top of the list */
     display: flex;
-    justify-content: center; /* Align links horizontally */
+    justify-content: justify; /* Align links horizontally */
 }
 nav ul li {
     margin-right: 8px; /* Adjust margin between navigation links */
@@ -60,7 +60,7 @@ nav ul li a:hover {
 article {
     width: 95%; /* Make article full width */
     margin: 0 auto;
-    text-align: center; /* Center align text in article */
+    text-align: justify; /* Center align text in article */
 }
 
 article ul {
@@ -86,7 +86,7 @@ article li {
 }
 article p {
     color: black;
-    text-align: center;
+    text-align: justify;
 }
 
 .menu-button {
