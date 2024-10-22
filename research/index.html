@@ -61,3 +61,8 @@
     <script src="../js/script.js"></script>
 </body>
 </html>
+
+// JavaScript to remove .html extension from URLs
+if (window.location.pathname.endsWith(".html")) {
+    window.history.replaceState(null, "", window.location.pathname.replace(".html", "/"));
+}
