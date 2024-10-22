@@ -12,11 +12,7 @@
     background-color: #004d40;
     color: white;
 }
-nav ul li a:hover {
-    background-color: #ffa500; /* Change to orange */
-    color: #fff;
-    transform: translateX(10px); /* Slide effect */
-}
+
 nav ul {
     text-align: center;
 }
