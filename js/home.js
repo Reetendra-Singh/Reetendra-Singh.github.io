@@ -1,5 +1,4 @@
-<script>
-        if (window.location.pathname.endsWith(".html")) {
+if (window.location.pathname.endsWith(".html")) {
             window.history.replaceState(null, "", window.location.pathname.replace(".html", "/"));
         }
 
@@ -46,6 +45,5 @@
 
             typeWriterEffect();
         });
-    </script>
 
 
