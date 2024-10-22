@@ -48,5 +48,4 @@
         });
     </script>
 
-// Start typing effect when the page loads
-document.addEventListener('DOMContentLoaded', type); // Add event listener for page load
+
