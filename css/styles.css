@@ -16,10 +16,7 @@ header {
     box-sizing: border-box; /* Ensure padding doesn't affect width */
     margin-bottom: 20px; /* Add space below the header */
 }
-h1, h2 {
-    margin: 0;
-    color: white; /* White text color */
-}
+
 
 .menu-button {
     position: absolute;
