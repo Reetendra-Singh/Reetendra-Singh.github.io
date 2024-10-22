@@ -12,3 +12,17 @@
     background-color: #004d40;
     color: white;
 }
+nav ul li a:hover {
+    background-color: #ffa500; /* Change to orange */
+    color: #fff;
+    transform: translateX(10px); /* Slide effect */
+}
+background: linear-gradient(135deg, #f5f5dc 30%, #ff6347 100%);
+.menu-button {
+    background-color: #ff6347; /* Tomato red */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow */
+    transition: transform 0.3s ease-in-out; /* Add animation */
+}
+.menu-button:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+}
