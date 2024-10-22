@@ -1,0 +1,57 @@
+.box {
+    display: flex;               /* Use Flexbox to align items horizontally */
+    align-items: center;         /* Vertically center the image and description */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image style inside the box */
+.box img {
+    max-width: 300px;            /* Set a maximum width for desktop screens */
+    height: auto;
+    margin-right: 20px;          /* Add space between the image and the description */
+}
+
+/* Description style inside the box */
+.box p {
+    margin: 0;                   /* Remove margin for tighter layout */
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    .box {
+        flex-direction: column;  /* Stack the image and description vertically on small screens */
+        text-align: center;
+    }
+
+    .box img {
+        margin: 0 0 20px 0;      /* Adjust margin for stacked layout */
+        max-width: 100%;          /* Ensure the image is responsive on smaller screens */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul li {
+        margin-right: 4px;
+    }
+    nav ul li a {
+        font-size: 10px;
+        padding: 2px 4px;
+    }
+}
+
+/* Image responsiveness */
+img.responsive {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Default: image will take full width of container */
+}
+
+/* For desktop screens */
+@media only screen and (min-width: 1024px) {
+    img.responsive {
+        max-width: 300px; /* Set a fixed max width for desktop screens */
+    }
+}
