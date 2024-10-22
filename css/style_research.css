@@ -1,3 +1,12 @@
+h2 {
+    margin: 0;
+    color: black; /* White text color */
+}
+
+article {
+    text-align: justify;
+}
+
 .box {
     display: flex;               /* Use Flexbox to align items horizontally */
     align-items: center;         /* Vertically center the image and description */
