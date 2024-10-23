@@ -102,23 +102,14 @@ footer a:hover {
 }
 
 
+
 @media only screen and (max-width: 768px) {
     header {
         padding-top: 40px; /* Ensure space for the menu button */
     }
-
-    .menu-button {
-        font-size: 0; /* Hides the text by setting font size to 0 */
-    }
     
-    /* Adjust the layout for h2 */
+    /* Align the header content and adjust the layout */
     h2 {
-        margin-top: 10px; /* Space between menu and first h2 */
-        margin-bottom: 5px; /* Reduce the space below the first h2 */
-    }
-    
-    /* Specific style for the second h2 if needed */
-    h2 + h2 {
-        margin-top: 5px; /* Reduce space between the two h2 elements */
+        margin-top: 10px; /* Additional space between menu and title */
     }
 }
