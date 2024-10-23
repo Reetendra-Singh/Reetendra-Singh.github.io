@@ -37,14 +37,6 @@ article {
 }
 
 @media only screen and (max-width: 768px) {
-    nav ul li {
-        margin-right: 4px;
-    }
-    nav ul li a {
-        font-size: 10px;
-        padding: 2px 4px;
-    }
-
     article p {
     text-align: justify; /* Justify text alignment */
 }
