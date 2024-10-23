@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+    <title>Reetendra Singh</title> <!-- Title of the page displayed in the browser tab -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style_CV.css">
+</head>
+<body>
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div> <!-- Overlay for the sidebar menu -->
+
+    <div class="sidebar" id="sidebar"> <!-- Sidebar for navigation links -->
+        <a href="/">HOME</a>
+        <a href="/research/">RESEARCH</a>
+        <a href="/CV/">CV</a>
+        <a href="/publications/">PUBLICATIONS</a>
+        <a href="/contact/">CONTACT</a>
+        <a href="/more/">MORE</a>
+    </div>
+
+    <main id="main-content"> <!-- Main content area -->
+        <header>
+            <button class="menu-button" onclick="toggleMenu()">☰ Menu</button> <!-- Menu button to toggle sidebar -->
+            <h1>REETENDRA SINGH</h1> <!-- Main title -->
+            <h2>Postdoctoral Fellow, Technion - Israel Institute of Technology</h2> <!-- Subtitle -->
+        </header>
+
+<!-- ***************************************************************************************************************** -->  
+       
+    <section>
+        <nav class="secondary-nav">
+            <ul>
+                <li><a href="/photo/">Photos</a></li>
+                <li><a href="/visualization/">Visualization</a></li>
+            </ul>
+        </nav>
+               
+        <p>(click on a photo to know more about it)</p>
+        <!-- Added image container -->
+        <div class="image-container">
+            <img src="../images/lab.webp" alt="Image 2" class="fullscreen-trigger" data-description="Lab lunch (Dr. Yoav, Amir, Inbal, Noy, Chubin, Dr. Shany, Me and Dr. Abhishek), March 2024">
+            <img src="../images/defense.webp" alt="Image 3" class="fullscreen-trigger" data-description="PhD Defense (Prof. C. N. R. Rao), June 2023">
+            <img src="../images/ram90.webp" alt="Image 1" class="fullscreen-trigger" data-description="Ram90 conference, December 2023">
+            <img src="../images/nightsci.webp" alt="Image 4" class="fullscreen-trigger" data-description="Late night discussion with JNC friends, October 2022">
+            <img src="../images/winterschool.webp" alt="Image 6" class="fullscreen-trigger" data-description="Winterschool, November 2020">
+            <img src="../images/Bsc.webp" alt="Image 5" class="fullscreen-trigger" data-description="BSc degree (100th convocation BHU), November 2018">
+        </div>
+    </section>
+
+    <footer>
+        <p>Connect with me on:</p>
+        <a href="https://www.linkedin.com/in/reetendra-singh/">LinkedIn</a> |
+        <a href="https://scholar.google.com/citations?user=quqtbIkAAAAJ&hl=en">Google Scholar</a> |
+        <a href="https://github.com/reetendra-singh">GitHub</a>
+        <p>&copy; 2024 Reetendra Singh. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
