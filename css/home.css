@@ -63,3 +63,14 @@ img.responsive {
     max-width: 1350px; /* Set a max width for larger screens */
     transform: translateY(0.3cm); /* Move the image 0.5 cm downward */
 }
+.typing-container {
+    text-align: justify; /* Justify the entire block of text */
+    width: 100%; /* Ensure full width for justification */
+    line-height: 1.5; /* Adjust line height for readability */
+    word-break: break-word; /* Allow word breaking if needed */
+}
+
+.typing-line {
+    text-align: justify; /* Justify individual lines */
+}
+
