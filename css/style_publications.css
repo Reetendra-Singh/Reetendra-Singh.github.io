@@ -1,3 +1,33 @@
+
+article p {
+            color: black; /* Dark teal for paragraphs */
+            line-height: 1.2; /* Increase line height for better readability */
+            margin-bottom: 15px; /* Space between paragraphs */
+            text-align: justify; /* Justify text alignment */
+        }
+
+        article a {
+            color: #D99112; /* Change link text color */
+            text-decoration: none; /* Remove the underline */
+        }
+
+        article a:hover {
+            color: #895C0D; /* Optional: Change color on hover */
+            text-decoration: underline; /* Optional: Add underline on hover */
+        }
+article {
+            width: 95%;
+            margin: 0 auto;
+            text-align: left;
+        }
+article h2 {
+            color: black; /* Dark teal for article headings */
+        }
+article h3 {
+            margin-top: 20px;
+            color: black; /* Dark teal for sub-headings */
+        }
+
 .abstract-box {
             display: none; /* Initially hidden */
             background-color: #f9f9f9; /* Light grey background */
