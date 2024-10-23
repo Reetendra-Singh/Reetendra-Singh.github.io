@@ -1,10 +1,12 @@
+article {
+            width: 95%;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
 article h2 {
             color: black;
         }
-
-article {
-    text-align: justify;
-}
 
 .box {
     display: flex;               /* Use Flexbox to align items horizontally */
