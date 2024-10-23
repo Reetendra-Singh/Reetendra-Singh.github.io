@@ -1,0 +1,146 @@
+article {
+            width: 95%; /* Make article full width */
+            margin: 0 auto;
+            text-align: justify; /* Align text in article */
+        }
+        
+        article ul {
+            list-style-type: none; /* Remove default list style */
+            padding-left: 0; /* Remove default padding */
+        }
+        article h3 {
+            margin-top: 20px; /* Add margin above the heading */
+            color: black; /* Dark teal for h3 elements */
+        }
+        article h3:before {
+            content: "•"; /* Add bullet point before heading */
+            display: inline-block;
+            margin-right: 5px; /* Add spacing between bullet point and text */
+            color: black; /* Dark teal for bullet point */
+        }
+        article h3 + ul {
+            margin-top: 0; /* Remove margin between heading and list */
+        }
+        article li {
+            margin-left: 20px; /* Add margin to align with heading */
+            color: black; /* Set color for list items */
+        }
+        article p {
+            color: black; /* Set color for paragraphs */
+        }
+
+        article a {
+    color: #D99112; /* Change link text color to black */
+    text-decoration: none; /* Remove the underline */
+}
+
+article a:hover {
+    color: #895C0D; /* Optional: Change color on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+article h2 {
+            color: black; /* Dark teal for article headings */
+        }
+
+nav ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+            margin: 20px 0 0 0; /* Remove margin at the top of the list */
+            display: flex;
+            justify-content: center; /* Align links horizontally */
+        }
+
+
+nav ul li {
+            margin-right: 8px; /* Adjust margin between navigation links */
+        }
+        nav ul li a {
+            font-size: 13px; /* Adjust font size for navigation links */
+            text-decoration: none; /* Remove underline */
+            padding: 5px 10px; /* Adjust padding */
+            border-radius: 5px; /* Add border radius */
+            color: white; /* White text color */
+            background-color: transparent; /* Keep background transparent */
+            transition: all 0.3s ease; /* Add transition effect */
+        }
+        nav ul li a:hover {
+            background-color: #00796b; /* Teal background on hover */
+            color: white; /* Keep text color on hover */
+        }
+
+nav.secondary-nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        nav.secondary-nav ul li {
+            margin: 0 15px;
+            display: flex;
+            align-items: center; /* Align items vertically in the center */
+        }
+
+        nav.secondary-nav ul li a {
+            font-size: 16px; /* Adjust font size */
+            color: #004d40; /* Dark teal for link color */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Make text bold */
+            border: 2px solid #004d40; /* Add border around link */
+            padding: 5px 10px; /* Add padding */
+            border-radius: 5px; /* Add rounded corners */
+            transition: all 0.3s ease; /* Add transition for hover effect */
+        }
+
+        nav.secondary-nav ul li a:hover {
+            background-color: #004d40; /* Dark teal background on hover */
+            color: white; /* White text color on hover */
+        }
+
+
+/* Box layout for image and description */
+        .box {
+            display: flex;               /* Use Flexbox to align items horizontally */
+            align-items: center;         /* Vertically center the image and description */
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            flex-direction: row; /* Default to row on larger screens */
+            overflow: hidden; /* Prevent overflow issues */
+        }
+
+        /* Image style inside the box */
+        .box img {
+            max-width: 180px;            /* Increased max width for images */
+            height: auto;
+            margin-right: 20px;          /* Space between the image and the description */
+            cursor: pointer;              /* Change cursor to pointer for clickable images */
+        }
+
+        /* Description style inside the box */
+        .box p {
+            margin: 0 0 0 20px;         /* Add left margin to create space between the image and the description */
+            flex-grow: 1;                /* Allow the paragraph to grow and fill the space */
+            text-align: justify;
+        }
+
+        /* Responsive layout for smaller screens */
+        @media only screen and (max-width: 768px) {
+            .box {
+                flex-direction: column;  /* Stack the image and description vertically on small screens */
+                text-align: center;  /* align text */
+            }
+
+            .box img {
+                margin: 0 0 10px 0;      /* Adjust margin for stacked layout */
+                max-width: 100%;          /* Ensure the image is responsive on smaller screens */
+            }
+        }
+
+        /* For desktop screens */
+        @media only screen and (min-width: 1024px) {
+            img.responsive {
+                max-width: 300px; /* Set a fixed max width for desktop screens */
+            }
+        }
