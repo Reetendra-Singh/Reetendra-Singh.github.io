@@ -1,43 +1,22 @@
-.download-resume a {
-    font-size: 16px; /* Increase font size */
-    text-decoration: none; /* Remove underline */
-    color: #004d40; /* Dark teal for link color */
-    font-weight: bold; /* Make text bold */
-    border: 2px solid #004d40; /* Add border around link */
-    padding: 5px 10px; /* Add padding to link */
-    border-radius: 5px; /* Add rounded corners */
-    transition: all 0.3s ease; /* Add transition for hover effect */
-}
+nav.secondary-nav ul li {
+            margin: 0 15px;
+            display: flex;
+            align-items: center; /* Align items vertically in the center */
+        }
 
-.download-resume a:hover {
-    background-color: #004d40; /* Dark teal background on hover */
-    color: white; /* White text color on hover */
-}
+        /* Styles for Photos, Awards, Fun links */
+        nav.secondary-nav ul li a {
+            font-size: 16px; /* Adjust font size */
+            color: #004d40; /* Dark teal for link color */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Make text bold */
+            border: 2px solid #004d40; /* Add border around link */
+            padding: 5px 10px; /* Add padding */
+            border-radius: 5px; /* Add rounded corners */
+            transition: all 0.3s ease; /* Add transition for hover effect */
+        }
 
-/* Styles for Achievements link */
-nav.secondary-nav ul li a {
-    font-size: 16px; /* Adjust font size */
-    color: #004d40; /* Dark teal for link color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make text bold */
-    border: 2px solid #004d40; /* Add border around link */
-    padding: 5px 10px; /* Add padding */
-    border-radius: 5px; /* Add rounded corners */
-    transition: all 0.3s ease; /* Add transition for hover effect */
-}
-
-nav.secondary-nav ul li a:hover {
-    background-color: #004d40; /* Dark teal background on hover */
-    color: white; /* White text color on hover */
-}
-
-/* Styles for Dr. Yoav Kalcheim and Prof. C. N. R. Rao (FRS) links */
-article a {
-    color: #D99112; /* Change link text color */
-    text-decoration: none; /* Remove underline */
-}
-
-article a:hover {
-    color: #895C0D; /* Change color on hover */
-    text-decoration: underline; /* Add underline on hover */
-}
+        nav.secondary-nav ul li a:hover {
+            background-color: #004d40; /* Dark teal background on hover */
+            color: white; /* White text color on hover */
+        }
