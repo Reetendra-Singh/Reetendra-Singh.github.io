@@ -48,7 +48,6 @@ article h3 {
     color: black; /* Dark teal for h3 elements */
 }
 article h3:before {
-    content: "•"; /* Add bullet point before heading */
     display: inline-block;
     margin-right: 5px; /* Add spacing between bullet point and text */
     color: black;
