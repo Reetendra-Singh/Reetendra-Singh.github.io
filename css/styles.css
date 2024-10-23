@@ -96,8 +96,8 @@ footer a:hover {
 
 @media only screen and (min-width: 769px) {
     .menu-button {
-        padding: 20px; /* Increase padding for larger button on desktop */
-        font-size: 18px; /* Increase font size on desktop */
+        padding: 15px; /* Increase padding for larger button on desktop */
+        font-size: 16px; /* Increase font size on desktop */
     }
 }
 
