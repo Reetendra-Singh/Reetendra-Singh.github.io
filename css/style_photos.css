@@ -1,3 +1,107 @@
+        article {
+            width: 95%; /* Make article full width */
+            margin: 0 auto;
+            text-align: justify; /* Align text in article */
+        }
+        
+        article ul {
+            list-style-type: none; /* Remove default list style */
+            padding-left: 0; /* Remove default padding */
+        }
+        article h3 {
+            margin-top: 20px; /* Add margin above the heading */
+            color: black; /* Dark teal for h3 elements */
+        }
+        article h3:before {
+            content: "•"; /* Add bullet point before heading */
+            display: inline-block;
+            margin-right: 5px; /* Add spacing between bullet point and text */
+            color: black; /* Dark teal for bullet point */
+        }
+        article h3 + ul {
+            margin-top: 0; /* Remove margin between heading and list */
+        }
+        article li {
+            margin-left: 20px; /* Add margin to align with heading */
+            color: black; /* Set color for list items */
+        }
+        article p {
+            color: black; /* Set color for paragraphs */
+        }
+
+        article a {
+    color: #D99112; /* Change link text color to black */
+    text-decoration: none; /* Remove the underline */
+}
+
+article a:hover {
+    color: #895C0D; /* Optional: Change color on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+article h2 {
+            color: black; /* Dark teal for article headings */
+        }
+
+nav ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+            margin: 20px 0 0 0; /* Remove margin at the top of the list */
+            display: flex;
+            justify-content: center; /* Align links horizontally */
+        }
+
+
+nav ul li {
+            margin-right: 8px; /* Adjust margin between navigation links */
+        }
+        nav ul li a {
+            font-size: 13px; /* Adjust font size for navigation links */
+            text-decoration: none; /* Remove underline */
+            padding: 5px 10px; /* Adjust padding */
+            border-radius: 5px; /* Add border radius */
+            color: white; /* White text color */
+            background-color: transparent; /* Keep background transparent */
+            transition: all 0.3s ease; /* Add transition effect */
+        }
+        nav ul li a:hover {
+            background-color: #00796b; /* Teal background on hover */
+            color: white; /* Keep text color on hover */
+        }
+
+nav.secondary-nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        nav.secondary-nav ul li {
+            margin: 0 15px;
+            display: flex;
+            align-items: center; /* Align items vertically in the center */
+        }
+
+        /* Styles for Photos, Awards, Fun links */
+        nav.secondary-nav ul li a {
+            font-size: 16px; /* Adjust font size */
+            color: #004d40; /* Dark teal for link color */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Make text bold */
+            border: 2px solid #004d40; /* Add border around link */
+            padding: 5px 10px; /* Add padding */
+            border-radius: 5px; /* Add rounded corners */
+            transition: all 0.3s ease; /* Add transition for hover effect */
+        }
+
+        nav.secondary-nav ul li a:hover {
+            background-color: #004d40; /* Dark teal background on hover */
+            color: white; /* White text color on hover */
+        }
+/* Add margin to space between Download Resume and Professional Accomplishments */
+        .professional-accomplishments {
+            margin-top: 20px; /* Add desired space above */
+        }
+
 .fullscreen-image {
             position: fixed;
             top: 0;
