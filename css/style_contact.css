@@ -24,27 +24,6 @@ article a:hover {
             justify-content: center; /* Center horizontally */
             align-items: center; /* Center vertically */
         }
-/* Responsive Styles */
-        @media only screen and (max-width: 768px) {
-            header {
-                margin: 0 auto; /* Adjust margin for smaller screens */
-                max-width: 100%; /* Adjust max-width for smaller screens */
-            }
-            nav ul li {
-                margin-right: 4px; /* Further reduce margin between navigation links */
-            }
-            nav ul li a {
-                font-size: 10px; /* Further reduce font size for navigation links */
-                padding: 2px 4px; /* Further adjust padding */
-            }
-            article {
-                margin-left: 5%; /* Adjust margin-left for smaller screens */
-                margin-right: 5%; /* Adjust margin-right for smaller screens */
-            }
-            .contact-form {
-                width: 50%; /* Set width to 50% for desktop screens */
-            }
-        }
 
 
         /* Style for form elements */
