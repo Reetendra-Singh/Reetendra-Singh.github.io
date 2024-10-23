@@ -191,6 +191,6 @@ nav.secondary-nav ul {
 
 @media only screen and (max-width: 768px) {
     .image-container img {
-        max-width: 100%; /* Full width for single column */
+        max-width: 95%; /* Full width for single column */
     }
 }
