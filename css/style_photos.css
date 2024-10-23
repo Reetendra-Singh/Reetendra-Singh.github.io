@@ -81,7 +81,6 @@ nav.secondary-nav ul {
             align-items: center; /* Align items vertically in the center */
         }
 
-        /* Styles for Photos, Awards, Fun links */
         nav.secondary-nav ul li a {
             font-size: 16px; /* Adjust font size */
             color: #004d40; /* Dark teal for link color */
@@ -97,10 +96,7 @@ nav.secondary-nav ul {
             background-color: #004d40; /* Dark teal background on hover */
             color: white; /* White text color on hover */
         }
-/* Add margin to space between Download Resume and Professional Accomplishments */
-        .professional-accomplishments {
-            margin-top: 20px; /* Add desired space above */
-        }
+
 
 .fullscreen-image {
             position: fixed;
