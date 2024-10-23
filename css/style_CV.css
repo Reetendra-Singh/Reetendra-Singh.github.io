@@ -22,27 +22,7 @@ nav ul {
             color: white; /* Keep text color on hover */
         }
 
-
-
-nav.secondary-nav ul li {
-            margin: 0 15px;
-            display: flex;
-            align-items: center; /* Align items vertically in the center */
-        }
-
-        /* Styles for Photos, Awards, Fun links */
-        nav.secondary-nav ul li a {
-            font-size: 16px; /* Adjust font size */
-            color: #004d40; /* Dark teal for link color */
-            text-decoration: none; /* Remove underline */
-            font-weight: bold; /* Make text bold */
-            border: 2px solid #004d40; /* Add border around link */
-            padding: 5px 10px; /* Add padding */
-            border-radius: 5px; /* Add rounded corners */
-            transition: all 0.3s ease; /* Add transition for hover effect */
-        }
-
-        nav.secondary-nav ul li a:hover {
-            background-color: #004d40; /* Dark teal background on hover */
-            color: white; /* White text color on hover */
+/* Add margin to space between Download Resume and Professional Accomplishments */
+        .professional-accomplishments {
+            margin-top: 20px; /* Add desired space above */
         }
