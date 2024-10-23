@@ -1,0 +1,83 @@
+article {
+            width: 95%; /* Make article full width */
+            margin: 0 auto 20px auto;
+            text-align: left; /* Align text in article to the left */
+        }
+article h2 {
+            color: black; /* Dark teal for h2 within article */
+        }
+article a {
+    color: #D99112; /* Change link text color to black */
+    text-decoration: none; /* Remove the underline */
+}
+article a:hover {
+    color: #895C0D; /* Optional: Change color on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+/* Map container */
+        .map-container {
+            width: 100%; /* Make the map full width on all screens */
+            height: 200px; /* Set height for the map */
+            margin: 0 auto; /* Center the map container */
+            margin-top: 20px; /* Add space above the map */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+/* Responsive Styles */
+        @media only screen and (max-width: 768px) {
+            header {
+                margin: 0 auto; /* Adjust margin for smaller screens */
+                max-width: 100%; /* Adjust max-width for smaller screens */
+            }
+            nav ul li {
+                margin-right: 4px; /* Further reduce margin between navigation links */
+            }
+            nav ul li a {
+                font-size: 10px; /* Further reduce font size for navigation links */
+                padding: 2px 4px; /* Further adjust padding */
+            }
+            article {
+                margin-left: 5%; /* Adjust margin-left for smaller screens */
+                margin-right: 5%; /* Adjust margin-right for smaller screens */
+            }
+        }
+
+
+        /* Style for form elements */
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%; /* Set width to fill container */
+            padding: 10px; /* Add padding */
+            margin: 10px 0; /* Add margin */
+            border: 1px solid #ccc; /* Add border */
+            border-radius: 5px; /* Add border radius */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+        form input[type="submit"] {
+            background-color: #004d40; /* Dark teal background color */
+            color: white; /* White text color */
+            padding: 15px 20px; /* Add padding */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Add cursor pointer */
+            transition: background-color 0.3s; /* Add transition for smooth hover effect */
+        }
+        form input[type="submit"]:hover {
+            background-color: #00796b; /* Medium teal background color on hover */
+        }
+
+        /* Style for contact form container */
+        .contact-form {
+            width: 95%; /* Default width for mobile screens */
+            max-width: 800px; /* Optional: max width for larger screens */
+            margin: 0 auto; /* Center align the form */
+        }
+
+        /* Desktop Styles */
+        @media only screen and (min-width: 769px) {
+            .contact-form {
+                width: 50%; /* Set width to 50% for desktop screens */
+            }
+        }
