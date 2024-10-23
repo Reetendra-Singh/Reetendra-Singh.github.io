@@ -21,17 +21,7 @@ h1, h2 {
     margin: 0; /* Remove margin for headings */
     color: white; /* White text color */
 }
-.menu-button {
-    position: absolute; /* Position menu button absolutely */
-    left: 15px; /* Position from left */
-    top: 15px; /* Position from top */
-    background-color: #fff; /* White background */
-    border: none; /* No border */
-    cursor: pointer; /* Pointer cursor on hover */
-    padding: 10px; /* Add padding */
-    border-radius: 5px; /* Round the button corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-}
+
 
 .sidebar {
     position: fixed; /* Fix sidebar position */
@@ -94,23 +84,11 @@ footer a:hover {
 }
 
 
-@media only screen and (min-width: 769px) {
-    .menu-button {
-        padding: 14px; /* Increase padding for larger button on desktop */
-        font-size: 16px; /* Increase font size on desktop */
-    }
-}
-
-
 @media only screen and (max-width: 768px) {
     header {
         padding-top: 40px; /* Ensure space for the menu button */
     }
 
-    .menu-button {
-        font-size: 0; /* Hides the text by setting font size to 0 */
-    }
-    
     /* Adjust the layout for h2 */
     h2 {
         margin-top: 10px; /* Space between menu and first h2 */
@@ -120,6 +98,58 @@ footer a:hover {
     /* Specific style for the second h2 if needed */
     h2 + h2 {
         margin-top: 5px; /* Reduce space between the two h2 elements */
+    }
+}
+
+
+/* Default style for desktop screens */
+.menu-button {
+    position: absolute; /* Position menu button */
+    left: 15px; /* Position from left */
+    top: 15px; /* Position from top */
+    background-color: #fff; /* White background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Round the button corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    font-size: 16px; /* Keep text for desktop */
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 768px) {
+    .menu-button {
+        font-size: 0; /* Hides the 'Menu' text */
+        padding: 15px; /* Adjust padding for the button */
+        background-color: transparent; /* Make background transparent */
+        border: none; /* No border */
+    }
+
+    /* Hamburger icon (3 lines) */
+    .hamburger-icon {
+        width: 25px;
+        height: 2px;
+        background-color: #000;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .hamburger-icon::before,
+    .hamburger-icon::after {
+        content: '';
+        background-color: #000;
+        width: 25px;
+        height: 2px;
+        position: absolute;
+        left: 0;
+    }
+
+    .hamburger-icon::before {
+        top: -8px; /* Position the top line */
+    }
+
+    .hamburger-icon::after {
+        top: 8px; /* Position the bottom line */
     }
 }
 
