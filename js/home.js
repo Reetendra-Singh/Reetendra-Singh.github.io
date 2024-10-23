@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         // Start a new line aligned to the left
                         const newLine = document.createElement("div");
                         newLine.classList.add("typing-line");
-                        newLine.style.textAlign = "left"; // Ensure alignment is left
+                        newLine.style.textAlign = "justify"; // Ensure alignment is justify
                         typingTextElement.appendChild(newLine);
                     }
 
