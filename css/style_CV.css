@@ -1,3 +1,13 @@
+article {
+            width: 95%; /* Make article full width */
+            margin: 0 auto;
+            text-align: left; /* Align text in article to the left */
+        }
+
+article h2 {
+            color: black; /* Dark teal for article headings */
+        }
+
 nav ul {
             list-style-type: none; /* Remove bullet points */
             padding: 0;
