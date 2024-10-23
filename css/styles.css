@@ -10,20 +10,12 @@ body {
     background-color: #e0f7fa; /* Light cyan background for a calming effect */
 }
 header {
-        background-color: #004d40;
-        padding: 20px;
-        width: 100%;
-        box-sizing: border-box;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 80px;
-    }
+    background-color: #004d40; /* Dark teal for header background */
+    padding: 20px 0; /* Add padding to the header */
+    width: 100%; /* Make header full width */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin-bottom: 20px; /* Add space below the header */
+}
 
 h1, h2 {
     margin: 0; /* Remove margin for headings */
@@ -64,7 +56,6 @@ h1, h2 {
     background-color: #005d50; /* Background color on hover */
 }
 main {
-    margin-top: 80px; 
     transition: margin-left 0.3s ease; /* Smooth transition for margin */
 }
 footer {
@@ -104,14 +95,12 @@ footer a:hover {
 
 @media only screen and (max-width: 768px) {
     header {
-        padding: 10px;              /* Adjust padding for mobile */
+        padding-top: 40px; /* Ensure space for the menu button */
     }
-
+    
+    /* Align the header content and adjust the layout */
     h1 {
-        font-size: 1.2rem;          /* Reduce title size for smaller screens */
-    }
-
-    h2 {
-        font-size: 0.9rem;          /* Reduce subtitle size for smaller screens */
+        margin-top: 10px; /* Additional space between menu and title */
     }
 }
+
