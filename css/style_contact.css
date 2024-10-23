@@ -41,6 +41,9 @@ article a:hover {
                 margin-left: 5%; /* Adjust margin-left for smaller screens */
                 margin-right: 5%; /* Adjust margin-right for smaller screens */
             }
+            .contact-form {
+                width: 50%; /* Set width to 50% for desktop screens */
+            }
         }
 
 
