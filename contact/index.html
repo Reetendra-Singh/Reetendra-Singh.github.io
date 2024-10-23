@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+    <title>Reetendra Singh</title> <!-- Title of the page displayed in the browser tab -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style_contact.css">
+</head>
+<body>
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div> <!-- Overlay for the sidebar menu -->
+
+    <div class="sidebar" id="sidebar"> <!-- Sidebar for navigation links -->
+        <a href="/">HOME</a>
+        <a href="/research/">RESEARCH</a>
+        <a href="/CV/">CV</a>
+        <a href="/publications/">PUBLICATIONS</a>
+        <a href="/contact/">CONTACT</a>
+        <a href="/more/">MORE</a>
+    </div>
+
+    <main id="main-content"> <!-- Main content area -->
+        <header>
+            <button class="menu-button" onclick="toggleMenu()">☰ Menu</button> <!-- Menu button to toggle sidebar -->
+            <h1>REETENDRA SINGH</h1> <!-- Main title -->
+            <h2>Postdoctoral Fellow, Technion - Israel Institute of Technology</h2> <!-- Subtitle -->
+        </header>
+
+<!-- ***************************************************************************************************************** -->  
+        
+    <section>
+        <!-- Map Section -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13418.54404709449!2d35.02544297124013!3d32.77539142986106!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151dba90e6a7bd9b%3A0xf1735b6e12e856eb!2sMaterials%20Engineering!5e0!3m2!1sen!2sil!4v1729505075696!5m2!1sen!2sil" 
+                width="95%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+      <article>
+            <h2>ADDRESS</h2>
+            <p>B9, Sagol Center for Composite Materials </p>
+            <p>Department of Materials Science and Engineering</p> 
+            <p>Technion, Haifa 3200003, Israel</p>
+            <p>Email: <a href="mailto:reetendra.rajpoot.bhu@gmail.com">reetendra.rajpoot.bhu@gmail.com</a></p>
+            <h2>CONTACT ME</h2>
+            <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
+            <form action="https://formspree.io/f/xzbnrjqq" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="_replyto" placeholder="Your Email" required><br>
+                <input type="text" name="_subject" placeholder="Subject" required><br>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
+                <input type="submit" value="Send Message">
+            </form>
+    </article>
+    </section>
+
+    <footer>
+        <p>Connect with me on:</p>
+        <a href="https://www.linkedin.com/in/reetendra-singh/">LinkedIn</a> |
+        <a href="https://scholar.google.com/citations?user=quqtbIkAAAAJ&hl=en">Google Scholar</a> |
+        <a href="https://github.com/reetendra-singh">GitHub</a>
+        <p>&copy; 2024 Reetendra Singh. All Rights Reserved.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>
