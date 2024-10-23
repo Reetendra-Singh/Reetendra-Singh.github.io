@@ -47,12 +47,7 @@ article h3 {
     margin-top: 20px; /* Add margin above the heading */
     color: black; /* Dark teal for h3 elements */
 }
-article h3:before {
-    display: inline-block;
-    margin-right: 5px; /* Add spacing between bullet point and text */
-    color: black;
-    font-size: 12px; /* Adjust bullet point size */
-}
+
 /* Image responsiveness */
 img.responsive {
     display: block; /* Make the image a block-level element */
