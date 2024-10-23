@@ -188,3 +188,10 @@ nav.secondary-nav ul {
         .image-container img:hover {
             transform: scale(1.05); /* Increased size on hover */
         }
+
+/* Responsive Styles for Single Column on Mobile */
+@media only screen and (max-width: 768px) {
+    .image-container img {
+        max-width: 100%; /* Full width for single column */
+    }
+}
