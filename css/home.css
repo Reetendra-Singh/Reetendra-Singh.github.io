@@ -51,45 +51,6 @@ article h3:before {
     content: "•"; /* Add bullet point before heading */
     display: inline-block;
     margin-right: 5px; /* Add spacing between bullet point and text */
-    color: black; /* Dark teal for bullet point */
-}
-article h3 + ul {
-    margin-top: 0; /* Remove margin between heading and list */
-}
-article li {
-    margin-left: 20px; /* Add margin to align with heading */
-    color: #004d40; /* Dark teal for list items */
-}
-article p {
     color: black;
-    text-align: justify;
-} 
-/* Typing animation */
-.typing {
-    display: inline-block; /* Inline-block for typing effect */
-    white-space: nowrap; /* Prevent wrapping */
-    overflow: hidden; /* Hide overflow */
-    border-right: 3px solid; /* Cursor effect */
-    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite; /* Animation for typing */
+    font-size: 12px; /* Adjust bullet point size */
 }
-/* Typing animation keyframes */
-@keyframes typing {
-    from { width: 0; } /* Start with no width */
-    to { width: 100%; } /* Expand to full width */
-}
-@keyframes blink-caret {
-    from, to { border-color: transparent; } /* Hide caret */
-    50% { border-color: orange; } /* Show caret */
-}
-
-
-/* Image responsiveness */
-img.responsive {
-    display: block; /* Make the image a block-level element */
-    margin: 0 auto; /* Center the image horizontally */
-    width: 100%; /* Ensure the image does not exceed the container width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 1350px; /* Set a max width for larger screens */
-    transform: translateY(0.3cm); /* Move the image 0.5 cm downward */
-}
-
