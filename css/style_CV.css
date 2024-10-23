@@ -1,3 +1,29 @@
+nav ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+            margin: 20px 0 0 0; /* Remove margin at the top of the list */
+            display: flex;
+            justify-content: center; /* Align links horizontally */
+        }
+        nav ul li {
+            margin-right: 8px; /* Adjust margin between navigation links */
+        }
+        nav ul li a {
+            font-size: 13px; /* Adjust font size for navigation links */
+            text-decoration: none; /* Remove underline */
+            padding: 5px 10px; /* Adjust padding */
+            border-radius: 5px; /* Add border radius */
+            color: white; /* White text color */
+            background-color: transparent; /* Keep background transparent */
+            transition: all 0.3s ease; /* Add transition effect */
+        }
+        nav ul li a:hover {
+            background-color: #00796b; /* Teal background on hover */
+            color: white; /* Keep text color on hover */
+        }
+
+
+
 nav.secondary-nav ul li {
             margin: 0 15px;
             display: flex;
