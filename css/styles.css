@@ -95,7 +95,7 @@ footer a:hover {
 
 @media only screen and (max-width: 768px) {
     header {
-        padding-top: 30px; /* Ensure space for the menu button */
+        padding-top: 40px; /* Ensure space for the menu button */
     }
     
     /* Align the header content and adjust the layout */
