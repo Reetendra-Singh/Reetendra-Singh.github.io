@@ -106,6 +106,10 @@ footer a:hover {
     header {
         padding-top: 40px; /* Ensure space for the menu button */
     }
+
+    .menu-button {
+        font-size: 0; /* Hides the text by setting font size to 0 */
+    }
     
     /* Adjust the layout for h2 */
     h2 {
