@@ -1,21 +1,20 @@
-function toggleMenu() {
-    const sidebar = document.getElementById('sidebar'); // Get the sidebar element
-    const overlay = document.getElementById('overlay'); // Get the overlay element
-    const isOpen = sidebar.style.left === '0px'; // Check if sidebar is open
 
-    if (isOpen) {
-        sidebar.style.left = '-250px'; // Close the sidebar
-        overlay.style.display = 'none'; // Hide the overlay
+function toggleMenu() {
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+    
+    // Check if the sidebar is hidden (left: -250px) and toggle its visibility
+    if (sidebar.style.left === "-250px" || sidebar.style.left === "") {
+        sidebar.style.left = "0"; // Show the sidebar
+        overlay.style.display = "block"; // Show the overlay
     } else {
-        sidebar.style.left = '0px'; // Open the sidebar
-        overlay.style.display = 'block'; // Show the overlay
+        sidebar.style.left = "-250px"; // Hide the sidebar
+        overlay.style.display = "none"; // Hide the overlay
     }
 }
 
-// Function to close the sidebar menu when overlay is clicked
+// Close the sidebar when clicking on the overlay
 function closeMenu() {
-    const sidebar = document.getElementById('sidebar'); // Get the sidebar element
-    const overlay = document.getElementById('overlay'); // Get the overlay element
-    sidebar.style.left = '-250px'; // Close the sidebar
-    overlay.style.display = 'none'; // Hide the overlay
+    document.getElementById("sidebar").style.left = "-250px"; // Hide the sidebar
+    document.getElementById("overlay").style.display = "none"; // Hide the overlay
 }
