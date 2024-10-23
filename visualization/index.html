@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
+    <title>Reetendra Singh</title> <!-- Title of the page displayed in the browser tab -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style_visualization.css">
+</head>
+<body>
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div> <!-- Overlay for the sidebar menu -->
+
+    <div class="sidebar" id="sidebar"> <!-- Sidebar for navigation links -->
+        <a href="/">HOME</a>
+        <a href="/research/">RESEARCH</a>
+        <a href="/CV/">CV</a>
+        <a href="/publications/">PUBLICATIONS</a>
+        <a href="/contact/">CONTACT</a>
+        <a href="/more/">MORE</a>
+    </div>
+
+    <main id="main-content"> <!-- Main content area -->
+        <header>
+            <button class="menu-button" onclick="toggleMenu()">☰ Menu</button> <!-- Menu button to toggle sidebar -->
+            <h1>REETENDRA SINGH</h1> <!-- Main title -->
+            <h2>Postdoctoral Fellow, Technion - Israel Institute of Technology</h2> <!-- Subtitle -->
+        </header>
+
+<!-- ***************************************************************************************************************** -->  
+       
+    <section>
+        <nav class="secondary-nav">
+            <ul>
+                <li><a href="/photo/">Photos</a></li>
+                <li><a href="/visualization/">Visualization</a></li>
+            </ul>
+        </nav>
+  </section>         
+
+  <section>
+        <article>
+            <p>These pages help you to quickly visualize the raw data of the electrical measurements to get valuable insights such as Metal-Insulator Transition and Resistive Switching in the materials. (Click on icons to open the window)</p>
+
+            <!-- Box for Metal-Insulator Transition Visualization -->
+            <div class="box">
+                <a href="javascript:void(0);" onclick="openPopup('/RT/');">
+                    <img src="images/RT1.png" alt="Metal-Insulator Transition" class="responsive">
+                </a>
+                <p>It helps to visualize the resistance vs temperature R(T), the derivative d(log(R))/dT, which is crucial for identifying the transition temperature and activation energy.</p>
+            </div>
+
+            <!-- Box for Resistive Switching Visualization -->
+            <div class="box">
+                <a href="javascript:void(0);" onclick="openPopup('/RS/');">
+                    <img src="images/RS.png" alt="Resistive Switching" class="responsive">
+                </a>
+                <p>This page helps to visualize the resistive switching behavior of memristive devices. A tool for plotting various electrical characteristics, including current-voltage I(V).</p>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>Connect with me on:</p>
+        <a href="https://www.linkedin.com/in/reetendra-singh/">LinkedIn</a> |
+        <a href="https://scholar.google.com/citations?user=quqtbIkAAAAJ&hl=en">Google Scholar</a> |
+        <a href="https://github.com/reetendra-singh">GitHub</a>
+        <p>&copy; 2024 Reetendra Singh. All Rights Reserved.</p>
+    </footer>
+        
+    <!-- Fullscreen image container -->
+    <div class="fullscreen-image">
+        <img class="fullscreen-content" src="">
+        <div class="photo-description"></div>
+        <div class="fullscreen-controls">
+            <span class="previous next-previous">&#10094; Previous</span>
+            <span class="close-fullscreen">Close</span>
+            <span class="next next-previous">Next &#10095;</span>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/visualization.js"></script>
+</body>
+</html>
