@@ -101,15 +101,38 @@ footer a:hover {
     }
 }
 
-
-
 @media only screen and (max-width: 768px) {
-    header {
-        padding-top: 40px; /* Ensure space for the menu button */
+    .menu-button {
+        font-size: 0; /* Hides the 'Menu' text */
+        padding: 15px; /* Adjust padding for the button */
+        background-color: transparent; /* Make background transparent */
+        border: 1px solid  #808080; /* No border */
+    }
+
+    /* Hamburger icon (3 lines) */
+    .hamburger-icon {
+        width: 20px;
+        height: 1px;
+        background-color: white;
+        position: relative;
+        display: inline-block;
     }
     
-    /* Align the header content and adjust the layout */
-    h2 {
-        margin-top: 10px; /* Additional space between menu and title */
+    .hamburger-icon::before,
+    .hamburger-icon::after {
+        content: '';
+        background-color: white;
+        width: 20px;
+        height: 1px;
+        position: absolute;
+        left: 0;
+    }
+
+    .hamburger-icon::before {
+        top: -8px; /* Position the top line */
+    }
+
+    .hamburger-icon::after {
+        top: 8px; /* Position the bottom line */
     }
 }
