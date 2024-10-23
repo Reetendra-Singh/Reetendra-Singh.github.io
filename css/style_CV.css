@@ -12,12 +12,7 @@
             margin-top: 20px; /* Add margin above the heading */
             color: black; /* Dark teal for h3 elements */
         }
-        article h3:before {
-            content: "•"; /* Add bullet point before heading */
-            display: inline-block;
-            margin-right: 5px; /* Add spacing between bullet point and text */
-            color: black; /* Dark teal for bullet point */
-        }
+        
         article h3 + ul {
             margin-top: 0; /* Remove margin between heading and list */
         }
