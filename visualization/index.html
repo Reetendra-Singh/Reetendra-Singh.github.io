@@ -3,9 +3,218 @@
 <head>
     <meta charset="UTF-8"> <!-- Character encoding for the document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design settings -->
-    <title>Reetendra Singh</title> <!-- Title of the page displayed in the browser tab -->
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/style_visualization.css">
+    <title>Reetendra Singh</title>
+    
+    <style>
+   @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+
+body {
+    font-family: 'Roboto Mono', monospace;
+
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center align all text */
+    background-color: #DEDEF3; /* Light cyan background for a calming effect */
+}
+header {
+    background-color: #ECECF4; /* Dark teal for header background */
+    padding: 20px 0; /* Add padding to the header */
+    width: 100%; /* Make header full width */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin-bottom: 20px; /* Add space below the header */
+}
+
+h1, h2 {
+    margin: 0; /* Remove margin for headings */
+    color: black; /* White text color */
+}
+.menu-button {
+    position: absolute; /* Position menu button absolutely */
+    left: 15px; /* Position from left */
+    top: 15px; /* Position from top */
+    background-color: #ECECF4; /* White background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Round the button corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.sidebar {
+    position: fixed; /* Fix sidebar position */
+    left: -250px; /* Hidden off-screen */
+    top: 0; /* Align to the top */
+    height: 100%; /* Full height */
+    width: 250px; /* Set width */
+    background-color: #E7E7F0; /* Dark teal background */
+    color: black; /* White text color */
+    transition: left 0.3s ease; /* Transition effect for opening */
+    padding-top: 60px; /* Space for top padding */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Add shadow to sidebar */
+    z-index: 1000; /* Ensure it's above other content */
+}
+.sidebar a {
+    padding: 15px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set link color to white */
+    display: block; /* Make link a block element */
+}
+.sidebar a:hover {
+    background-color: #DEDEF3; /* Background color on hover */
+}
+main {
+    transition: margin-left 0.3s ease; /* Smooth transition for margin */
+}
+footer {
+    background-color: #ECECF4; /* Dark teal for footer background */
+    color: black; /* White text color */
+    width: 100%; /* Make the footer full width */
+    padding: 5px 0; /* Reduce padding to prevent cropping */
+    bottom: 0; /* Align the footer to the bottom */
+    left: 0; /* Ensure the footer starts from the left edge */
+    text-align: center; /* Center the text in the footer */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    line-height: 1.2; /* Reduce line height to save space */
+    font-size: 12px; /* Reduce font size slightly to prevent cropping */
+}
+
+footer a {
+    color: black; /* Set the link color to white */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 8px; /* Reduce spacing between the links */
+    font-size: 12px; /* Ensure link font size matches the footer text */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+/* Overlay */
+.overlay {
+    position: fixed; /* Fixed position for the overlay */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    display: none; /* Hidden by default */
+    z-index: 900; /* Below the sidebar */
+}
+
+
+@media only screen and (min-width: 769px) {
+    .menu-button {
+        padding: 14px; /* Increase padding for larger button on desktop */
+        font-size: 16px;
+        border: 1px solid  #808080;/* Increase font size on desktop */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-button {
+        font-size: 0; /* Hides the 'Menu' text */
+        padding: 15px; /* Adjust padding for the button */
+        background-color: transparent; /* Make background transparent */
+        border: 1px solid  #808080; /* No border */
+    }
+
+    /* Hamburger icon (3 lines) */
+    .hamburger-icon {
+        width: 20px;
+        height: 1px;
+        background-color: black;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .hamburger-icon::before,
+    .hamburger-icon::after {
+        content: '';
+        background-color: black;
+        width: 20px;
+        height: 1px;
+        position: absolute;
+        left: 0;
+    }
+
+    .hamburger-icon::before {
+        top: -8px; /* Position the top line */
+    }
+
+    .hamburger-icon::after {
+        top: 8px; /* Position the bottom line */
+    }
+}
+
+article h2 {
+    color: black; /* Dark teal for h2 within article */
+}
+
+article h3 {
+    margin-top: 20px; /* Add margin above the heading */
+    color: black; /* Dark teal for h3 elements */
+}
+
+h2.AcademicTitle {
+    color: #004d40; /* Dark teal for specific h2 elements */
+}
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 20px 0 0 0; /* Remove margin at the top of the list */
+    display: flex;
+    
+}
+nav ul li {
+    margin-right: 8px; /* Adjust margin between navigation links */
+}
+nav ul li a {
+    font-size: 13px; /* Adjust font size for navigation links */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Adjust padding */
+    border-radius: 5px; /* Add border radius */
+    color: white; /* Set text color */
+    background-color: transparent; /* Keep background transparent */
+    transition: all 0.3s ease; /* Add transition effect */
+}
+nav ul li a:hover {
+    background-color: #00796b; /* Teal background on hover */
+    color: white; /* Keep text color on hover */
+}
+
+article {
+    width: 95%; /* Make article full width */
+    margin: 0 auto;
+}
+
+article ul {
+    list-style-type: none; /* Remove default list style */
+    padding-left: 0; /* Remove default padding */
+}
+article h3 {
+    margin-top: 20px; /* Add margin above the heading */
+    color: black; /* Dark teal for h3 elements */
+}
+
+/* Image responsiveness */
+img.responsive {
+    display: block; /* Make the image a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+    width: 100%; /* Ensure the image does not exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 1350px; /* Set a max width for larger screens */
+    transform: translateY(0.3cm); /* Move the image 0.5 cm downward */
+}
+.typing-container {
+    text-align: justify; /* Justify the entire block of text */
+    width: 100%; /* Ensure full width for justification */
+    line-height: 1.5; /* Adjust line height for readability */
+    word-break: break-word; /* Allow word breaking if needed */
+}
+
+.typing-line {
+    text-align: justify; /* Justify individual lines */
+}
+</style>
 </head>
 <body>
     <div class="overlay" id="overlay" onclick="closeMenu()"></div> <!-- Overlay for the sidebar menu -->
@@ -27,46 +236,97 @@
             <h2>Postdoctoral Fellow, Technion</h2> <!-- Subtitle -->
         </header>
 
-<!-- ***************************************************************************************************************** -->  
-       
-    <section>
-        <nav class="secondary-nav">
-            <ul>
-                <li><a href="/visualization/">Visualization</a></li>
-            </ul>
-        </nav>
-  </section>         
+<!-- *********************************************************************************************************************** -->
+        
+        <section>
+            <article>
+                <img src="../images/reetendra.webp" alt="Reetendra Singh Photo" class="responsive"> <!-- Profile image -->
+                <p>Dr. Reetendra Singh</p> <!-- Description of the person -->
+            </article>
+        </section>
 
-  <section>
-        <article>
-            <p>These pages help you to quickly visualize the raw data of the electrical measurements to get valuable insights such as Metal-Insulator Transition and Resistive Switching in the materials. (Click on icons to open the window)</p>
-
-            <!-- Box for Metal-Insulator Transition Visualization -->
-            <div class="box">
-                <a href="javascript:void(0);" onclick="openPopup('/RT/');">
-                    <img src="../images/RT.png" alt="Metal-Insulator Transition" class="responsive">
-                </a>
-                <p>It helps to visualize the resistance vs temperature R(T), the derivative d(log(R))/dT, which is crucial for identifying the transition temperature and activation energy.</p>
-            </div>
-
-            <!-- Box for Resistive Switching Visualization -->
-            <div class="box">
-                <a href="javascript:void(0);" onclick="openPopup('/RS/');">
-                    <img src="../images/RS.png" alt="Resistive Switching" class="responsive">
-                </a>
-                <p>This page helps to visualize the resistive switching behavior of memristive devices. A tool for plotting various electrical characteristics, including current-voltage I(V).</p>
-            </div>
-        </article>
-    </section>
-
-    <footer>
-        <p>Connect with me on:</p>
-        <a href="https://www.linkedin.com/in/reetendra-singh/">LinkedIn</a> |
-        <a href="https://scholar.google.com/citations?user=quqtbIkAAAAJ&hl=en">Google Scholar</a> |
-        <a href="https://github.com/reetendra-singh">GitHub</a>
-        <p>&copy; 2024 Reetendra Singh. All Rights Reserved.</p>
-    </footer>
-    <script src="../js/script.js"></script>
-    <script src="../js/visualization.js"></script>
+        <section>
+            <article>
+                <h3>Philosophy & Motivation</h3> <!-- Section heading -->
+                <div id="typing-text" class="typing-container"></div> <!-- Area for typing effect text -->
+            </article>
+        </section>
+        <footer> <!-- Footer section -->
+            <p>Connect with me on:</p>
+            <a href="https://www.linkedin.com/in/reetendra-singh/">LinkedIn</a> | <!-- LinkedIn link -->
+            <a href="https://scholar.google.com/citations?user=quqtbIkAAAAJ&hl=en">Google Scholar</a> | <!-- Google Scholar link -->
+            <a href="https://github.com/reetendra-singh">GitHub</a> <!-- GitHub link -->
+            <p>&copy; 2024 Reetendra Singh. All Rights Reserved.</p> <!-- Copyright notice -->
+        </footer>
+    </main>
 </body>
+<Script>
+    document.addEventListener("DOMContentLoaded", function() {
+            const texts = [
+                "I am Reetendra, a dedicated Material Science Researcher with over 7 years of experience in advancing the field. With more than 4 years focused on the growth of thin films and nanomaterials, my work spans 2D materials and oxide materials, aiming for breakthroughs in clean energy production and sensing applications. I am passionate about bridging the gap between lab research and industry applications, driving innovations that can be readily adopted. ",
+                "Recently, my curiosity has expanded to quantum materials, exploring their potential for neuromorphic device applications.",
+                "My journey has been profoundly shaped by the invaluable guidance of my mentors and seniors, who have inspired me to persevere through every challenge.",
+                "Beyond my academic pursuits, I am actively enhancing my expertise in data analytics and data science to further contribute to interdisciplinary advancements."
+            ];
+
+            let currentTextIndex = 0;
+            let currentCharIndex = 0;
+
+            function typeWriterEffect() {
+                if (currentTextIndex < texts.length) {
+                    const currentText = texts[currentTextIndex];
+                    const typingTextElement = document.getElementById("typing-text");
+
+                    if (currentCharIndex === 0) {
+                        // Start a new line aligned to the left
+                        const newLine = document.createElement("div");
+                        newLine.classList.add("typing-line");
+                        newLine.style.textAlign = "justify"; // Ensure alignment is justify
+                        typingTextElement.appendChild(newLine);
+                    }
+
+                    const partialText = currentText.slice(0, currentCharIndex + 1);
+                    typingTextElement.lastChild.innerHTML = partialText;
+
+                    currentCharIndex++;
+
+                    if (currentCharIndex < currentText.length) {
+                        // Continue typing the current line
+                        setTimeout(typeWriterEffect, 5); // Set typing speed
+                    } else {
+                        // Finished typing the current line, move to next line after a short pause
+                        currentTextIndex++;
+                        currentCharIndex = 0;
+                        setTimeout(typeWriterEffect, 10); // Pause before typing the next line
+                    }
+                }
+            }
+
+            typeWriterEffect();
+        });
+        
+function toggleMenu() {
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+    
+    // Check if the sidebar is hidden (left: -250px) and toggle its visibility
+    if (sidebar.style.left === "-250px" || sidebar.style.left === "") {
+        sidebar.style.left = "0"; // Show the sidebar
+        overlay.style.display = "block"; // Show the overlay
+    } else {
+        sidebar.style.left = "-250px"; // Hide the sidebar
+        overlay.style.display = "none"; // Hide the overlay
+    }
+}
+
+// Close the sidebar when clicking on the overlay
+function closeMenu() {
+    document.getElementById("sidebar").style.left = "-250px"; // Hide the sidebar
+    document.getElementById("overlay").style.display = "none"; // Hide the overlay
+}
+</Script>
+    
+    
 </html>
+
+
